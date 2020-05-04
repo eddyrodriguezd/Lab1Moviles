@@ -1,4 +1,4 @@
-package lab1;
+package lab1.opcion2;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;

@@ -1,4 +1,4 @@
-package lab1;
+package lab1.opcion2;
 
 public class Persona {
     private String nombre;
