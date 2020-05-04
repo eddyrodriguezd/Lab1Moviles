@@ -15,7 +15,7 @@ public class App1 {
         int opcion;
         int num;
         int num2;
- 
+        
         while (true) {
  
             System.out.println("1. Verifica si un número es primo");
@@ -46,10 +46,15 @@ public class App1 {
                         System.out.println("El MCD de los números ingresados es " + mcd(num, num2));
                         break;
                     case 3:
-                        
+                        System.out.println("Ingrese el número para la serie fibonacci: ");
+                        num = scanner.nextInt();
+                        System.out.println("La serie Fibonacci para el número es ");
+                        fibonacci(num);
                         break;
                     case 4:
-                        
+                        System.out.println("Ingrese el número: ");
+                        num = scanner.nextInt();
+                        System.out.println("El factorial de los números ingresados es " + factorial(num));
                         break;
                     default:
                         System.out.println("Solo se cuenta con opciones del 1 al 4");

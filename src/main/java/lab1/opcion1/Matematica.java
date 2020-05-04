@@ -34,11 +34,11 @@ public class Matematica {
     
     public static void fibonacci (int num){
         int t1 = 0, t2 = 1;
-        //System.out.print("Serie fibonacci de " + n + " terminos: ");
+        System.out.print("Serie fibonacci de " + num + " terminos: ");
 
         for (int i = 1; i <= num; ++i)
         {
-           // System.out.print(t1 + " ");
+           System.out.print(t1 + " ");
 
             int sum = t1 + t2;
             t1 = t2;
