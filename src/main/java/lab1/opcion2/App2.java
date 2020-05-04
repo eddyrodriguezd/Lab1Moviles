@@ -1,6 +1,8 @@
 package lab1.opcion2;
 
+import java.util.HashMap;
 import java.util.InputMismatchException;
+import java.util.Map;
 import java.util.Scanner;
 import lab1.Menu;
 
@@ -39,8 +41,13 @@ public class App2 implements Menu {
     public void realizarAccion(int numAccion) {
         switch (numAccion) {
             case 1:
+                String resource = "/personas.json";
+                //String fileName = UnitTests.class.getClassLoader().getResource(resource).getFile();
                 break;
             case 2:
+                Map<String, Object> map = new HashMap<>();
+                map.put("name", "John Deo");
+                map.put("email", "john.doe@example.com");
                 break;
             case 3:
                 break;
