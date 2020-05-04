@@ -14,12 +14,24 @@ public class json {
         ObjectMapper objectMapper = new ObjectMapper();
         Persona persona = new Persona();
 
-
+        //listar
         try {
             List<Persona> listapersona = objectMapper.readValue("src/main/java/resources/personas.json",new TypeReference<List<Persona>>(){});
+            int i = 0;
+            for (persona:listapersona
+                 ) {
+                i = i+1;
+                System.out.println(i);
+                System.out.println(persona.getNombre());
+                System.out.println(persona.getApellido());
+
+            }
+
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
+
+        //crear persona
 
 
 
