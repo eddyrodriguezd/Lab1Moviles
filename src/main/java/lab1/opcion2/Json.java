@@ -6,9 +6,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.List;
 
-public class json {
+public class Json {
 
-    public static void main (){
+    public  void  listar (List<Persona> listapersona){
 
 
         ObjectMapper objectMapper = new ObjectMapper();
@@ -16,7 +16,7 @@ public class json {
 
         //listar
         try {
-            List<Persona> listapersona = objectMapper.readValue("src/main/java/resources/personas.json",new TypeReference<List<Persona>>(){});
+
             int i = 0;
             for (persona:listapersona
                  ) {
@@ -30,11 +30,6 @@ public class json {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-
-        //crear persona
-
-
-
     }
 
 
