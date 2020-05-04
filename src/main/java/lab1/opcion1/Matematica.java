@@ -1,4 +1,4 @@
-package lab1;
+package lab1.opcion1;
 
 public class Matematica {
     

@@ -1,22 +1,22 @@
-package lab1;
+package lab1.opcion1;
 
+import lab1.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import static lab1.Matematica.numEsPrimo;
-import static lab1.Matematica.mcd;
-import static lab1.Matematica.fibonacci;
-import static lab1.Matematica.factorial;
+import static lab1.opcion1.Matematica.numEsPrimo;
+import static lab1.opcion1.Matematica.mcd;
+import static lab1.opcion1.Matematica.fibonacci;
+import static lab1.opcion1.Matematica.factorial;
 
-public class App {
+public class App1 {
     public static void main(String[] args) {
     
         Scanner scanner = new Scanner(System.in);
-        boolean salir = false;
         int opcion;
         int num;
         int num2;
  
-        while (!salir) {
+        while (true) {
  
             System.out.println("1. Verifica si un número es primo");
             System.out.println("2. Calcula el MCD entre dos números");
